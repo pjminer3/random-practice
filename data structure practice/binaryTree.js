@@ -93,20 +93,20 @@ class BinaryTreeNode {
   }
 }
 
-console.log('The below should be a node with a data property, and thats it')
+console.log('The below should log a node with a data property equal to 10. The left and right properties should be undefined')
 let ex = new BinaryTreeNode(10);
 console.log(ex);
 printLines();
 ex.insert(5);
 ex.insert(20);
-console.log('The below should be a node with: data (10), left (node w/ data 5), right (node w/ data 20)');
+console.log('The below should log a node 3 properties: data (with a value of10), left (a node w/ 3 properties; [data => 5], [left => undefined], and [right => undefined]), right (a node w/ 3 properties; [data => 20], [left => undefined], and [right => undefined])');
 console.log(ex);
 printLines();
 ex.insert(2);
 ex.insert(9);
 ex.insert(15);
 ex.insert(25);
-console.log('The below should be a node with: 2 children and 4 grandchildren')
+console.log('The below should be a node with: 2 child nodes (described above) and 4 grandchildren (which are the left/right of the 2 child nodes above)')
 console.log(ex);
 
 
